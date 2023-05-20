@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Jior Park Hell",
+  "version": "1.0",
+  "description": "I'm jinho linmin dongmoo",
+  "permissions": ["storage", "webNavigation", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/shorts/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
+
+
